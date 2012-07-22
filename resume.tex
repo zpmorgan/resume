@@ -2,7 +2,7 @@
 % Adapted from Andrew McNabb's Resume
 
 
-\documentclass[12pt,oneside]{article}
+\documentclass[11pt,oneside]{article}
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
 
@@ -32,7 +32,7 @@
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-	\vspace{4pt}
+	\vspace{2pt}
 	{\fontfamily{phv}\selectfont\Large#1}
 	\begin{itemize}
 	\vspace{3pt}
@@ -105,7 +105,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Objective}
 
-   \resitem{I am seeking a position as a computer programmer.}
+   \resitem{I am seeking open-ended opportunities with potential to further my skillset \& experience in unanticipated directions.}
 	
 \end{ressection}
 
@@ -130,7 +130,7 @@
 
 		\ressubitem{Proficient in Perl, Regular expressions, SQL, C, C++, HTML}
 
-		\ressubitem{Familiar with Javascript, \LaTeX, Bash}
+		\ressubitem{Familiar with Javascript, \LaTeX, Java, Bash}
 
 	\end{reslist}
 
@@ -138,7 +138,7 @@
 
 		\ressubitem{Proficient in Catalyst, DBIx::Class, Template::Toolkit, Moose, SQLite, Git, Bazaar, GTK+}
 
-		\ressubitem{Familiar with VI, MySQL, Lighttpd}
+      \ressubitem{Familiar with Vim, MySQL, Lighttpd, Android, Machine learning concepts, PDL}
 
 	\end{reslist}
 
@@ -170,6 +170,12 @@
       system for some geometric shapes in 2D; it detects collisions between
       points, circles, and rects of any size and velocity.
       Originally implemented on Moose, it was ported to an XS backend.}{}
+	\end{ressubsec}
+	\begin{ressubsec}{AI::Nerl}{
+      AI::Nerl is a perceptron-type neural network library. AI::Nerl uses PDL, the Perl Data
+      Language for fast linear operations, including training using backpropagation.
+      AI::Nerl has been used to build a digit classifier and a general image classifier.
+      }{}
 	\end{ressubsec}
 
 \end{ressection}
